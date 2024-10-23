@@ -488,12 +488,14 @@ header.sticky {
         margin: 18px 0;
 
     }
-    
+    .navmenu.open{
+        right: 0;
+    }
     
     .nav-icon {
         display: flex;
     }
-
+}
     /* Main Section */
     .main-home {
         grid-template-columns: 1fr; /* Ubah grid menjadi satu kolom */
@@ -588,7 +590,7 @@ header.sticky {
     .end-text p {
         font-size: 14px;
     }
-}
+
 
 /* Media query untuk layar dengan lebar maksimum 480px (ponsel kecil) */
 @media (max-width: 480px) {
