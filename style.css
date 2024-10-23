@@ -85,7 +85,8 @@ section{
 }
 
 .main-text h5{
-    color: #EE1C47;
+    color: #333c56;
+    
     font-size: 16px;
     text-transform: capitalize;
     font-weight: 500;
@@ -101,7 +102,7 @@ section{
 }
 
 .main-text p{
-    color: #333c56;
+    color:#EE1C47;
     font-size: 20px;
     font-style: italic;
     margin-bottom: 20px;
@@ -257,40 +258,7 @@ header.sticky {
   
 
 
-  /* hadhiahdia */
-  /* General Styling for Products Section */
-/* General Styling for Products Section */
-.products {
-    padding: 60px 20px;
-    background-color: #fff;
-    text-align: center;
-  }
   
-  .products h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    color: #333;
-  }
-  
-  .products-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk desktop */
-    gap: 20px;
-  }
-  
-  .product-item {
-    background-color: #f4f4f4;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    overflow: hidden;
-  }
-  
-  .product-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
   
   /* Styling for product image */
   .product-image {
@@ -498,26 +466,37 @@ header.sticky {
 
     /* Main Section */
     .main-home {
-        grid-template-columns: 1fr; /* Ubah grid menjadi satu kolom */
-        text-align: center;
+        background-image: url('Gambar/bg\ mobile.png'); /* Ganti dengan gambar khusus untuk mobile jika diperlukan */
+        background-size: cover; /* Sesuaikan agar gambar tetap memenuhi layar */
+        background-position: center center; /* Pusatkan gambar secara vertikal dan horizontal */
+        height: auto; /* Sesuaikan tinggi konten dengan isi */
         padding: 20px;
+    }.main-text {
+        text-align: center;
+        margin-top: 80px; /* Atur nilai sesuai dengan kebutuhan */
+        /* atau */
+        padding-top: 80px; /* Atur nilai sesuai dengan kebutuhan */
     }
+    
 
     .main-text h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
-
+    .main-text h5{
+        color: #555;
+    }
     .main-text p {
-        font-size: 18px;
+        font-size: 16px;
+        color: #EE1C47;
     }
 
     .main-btn {
-        font-size: 14px;
-        padding: 10px 20px;
+        font-size: 12px;
+        padding: 8px 16px;
     }
 
     .down-arrow {
-        right: 5%; /* Geser sedikit untuk tampilan yang lebih baik */
+        right: 10%; /* Geser sedikit untuk tampilan yang lebih baik */
     }
 /* About Section */
 .about-container {
