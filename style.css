@@ -1,0 +1,656 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "jost",sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.navmenu{
+    display: flex;
+}
+
+.navmenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover{
+    color: #EE1C47;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42 ease;
+}
+
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: #EE1C47;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+section{
+    padding: 5% 10%;
+}
+
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Gambar/bg\ fix.png);
+    background-position: right;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: #f4f4f4;
+    
+}
+
+.main-text h5{
+    color: #EE1C47;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.main-text h1{
+    color: #000;
+    font-size: 40px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+
+.main-text p{
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn{
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+
+.main-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.main-btn i{
+    vertical-align: middle;
+}
+
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+
+.down i{
+    font-size: 30px;
+    color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.down i:hover{
+    background-color: #2c2c2c;
+    color: #fff;
+    transition: all .42s ease;
+}
+
+
+header.sticky {
+    background: #fff;
+    padding:  20px 10%;
+    box-shadow:  0px 0px 10px rgb(0, 0, 0 / 10%);
+}
+
+/* About Section Styling */
+.about {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-container {
+    margin: 0 auto; /* Atur margin menjadi auto untuk memusatkan kontainer */
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    margin-bottom: 40px; /* Sesuaikan margin-bottom agar tidak terlalu jauh */
+    flex: 1;
+    margin-right: 20px;
+}
+
+.about-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 20px;
+    line-height: 2;
+    color: #555;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center; /* Pusatkan gambar dalam kolomnya */
+}
+
+.about-image img {
+    margin-bottom: 40px; /* Sesuaikan margin-bottom agar tidak terlalu jauh */
+    margin: 0 auto; /* Hilangkan margin-left dan pusatkan gambar */
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+  /* Produk */
+/* Products Section Styling */
+/* Products Section Styling */
+.products {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .products h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Membuat 2 kolom */
+    gap: 20px; /* Jarak antar item */
+  }
+  
+  .product-item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+
+
+  /* hadhiahdia */
+  /* General Styling for Products Section */
+/* General Styling for Products Section */
+.products {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .products h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk desktop */
+    gap: 20px;
+  }
+  
+  .product-item {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Styling for product image */
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Tetapkan tinggi gambar sesuai kebutuhan */
+  }
+  
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Gambar ditampilkan penuh tanpa dipotong, namun tetap proporsional */
+    transition: opacity 0.3s ease;
+    position: absolute; /* Set gambar agar berada di posisi yang sama */
+    top: 0;
+    left: 0;
+  }
+  
+  .product-image img.default {
+    opacity: 1;
+    z-index: 1; /* Set gambar default di atas */
+  }
+  
+  .product-image img.hover {
+    opacity: 0;
+    z-index: 0; /* Set gambar hover di bawah */
+  }
+  
+  .product-item:hover .product-image img.default {
+    opacity: 0; /* Sembunyikan gambar default saat hover */
+  }
+  
+  .product-item:hover .product-image img.hover {
+    opacity: 1; /* Tampilkan gambar hover saat hover */
+    z-index: 2; /* Bawa gambar hover ke atas */
+  }
+  
+  .product-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .product-item p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+
+
+/* General Styling for Reviews Section */
+.reviews {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .reviews h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom untuk desktop */
+    gap: 20px;
+  }
+  
+  .review-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+  }
+  
+  .review-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .review-item p {
+    font-size: 16px;
+    color: #666;
+    font-style: italic;
+  }
+  
+  .rating {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #ffcc00;
+  }
+
+
+
+  /* yufgyyhgfyhg */
+  .contact{
+    background-color: #f3f4f6;
+}
+.contact-info{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px,auto));
+    gap: 3rem;
+}
+
+.first-info img{
+    width: 140px;
+    height: auto;
+}
+
+.contact-info h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+}
+
+.contact-info p{
+    color: #565656;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42s;
+}
+
+.contact-info p:hover {
+    color: #EE1C47;
+}
+
+.sosial-icon i{
+    color: #565656;
+    margin-right:10px ;
+    font-size: 20px;
+    transition: all .42s;
+}
+
+.sosial-icon i:hover{
+    transform: scale(1.3);
+}
+
+.end-text {
+    background-color: #edfff1;
+    text-align: center;
+    padding: 20px;
+}
+
+.end-text p{
+    color: #111;
+    text-transform: capitalize;
+}
+
+
+  
+/* Media query untuk layar dengan lebar maksimum 768px (tablet dan ponsel) */
+@media (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 15px 5%;
+    }
+    
+    .navmenu {
+        display: none; /* Menyembunyikan menu navigasi pada tampilan mobile */
+        position: absolute;
+        top:100%;
+        right: -100%;
+        width: 300px;
+        height: 130vh;
+        background: #edfff1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 120px 30px;
+        transition: all .42s;
+    }
+    .navmenu a{
+        display: block;
+        margin: 18px 0;
+
+    }
+    
+    
+    .nav-icon {
+        display: flex;
+    }
+
+    /* Main Section */
+    .main-home {
+        grid-template-columns: 1fr; /* Ubah grid menjadi satu kolom */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main-text h1 {
+        font-size: 32px;
+    }
+
+    .main-text p {
+        font-size: 18px;
+    }
+
+    .main-btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .down-arrow {
+        right: 5%; /* Geser sedikit untuk tampilan yang lebih baik */
+    }
+/* About Section */
+.about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Seluruh teks berada di tengah */
+    padding: 20px; /* Tambahkan padding agar ada ruang di sekitar teks */
+    box-sizing: border-box; /* Pastikan padding tidak memengaruhi ukuran total kontainer */
+}
+
+.about-text {
+    margin-bottom: 20px;
+    margin-right: 0;
+    max-width: 100%; /* Pastikan teks tidak melewati lebar layar */
+    word-wrap: break-word; /* Paksa teks yang panjang untuk membungkus di layar kecil */
+    overflow-wrap: break-word; /* Menangani kata-kata panjang yang bisa membuat teks keluar dari kontainer */
+}
+
+.about-text h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px; /* Tambahkan sedikit ruang di bawah judul */
+}
+
+.about-text p {
+    font-size: 18px;
+    padding: 0 10px; /* Tambahkan padding di kiri dan kanan untuk memberi ruang */
+    line-height: 1.6; /* Tambahkan line-height untuk ruang vertikal yang lebih baik */
+}
+
+.about-image img {
+    margin: 0 auto;
+    width: 270px;
+    height: 250px;
+}
+
+
+    /* Products Section */
+    .products-container {
+        grid-template-columns: 1fr; /* Ubah menjadi satu kolom untuk mobile */
+    }
+
+    .product-image {
+        height: 300px; /* Sesuaikan tinggi gambar produk untuk mobile */
+    }
+
+    /* Reviews Section */
+    .reviews-container {
+        grid-template-columns: 1fr; /* Ubah menjadi satu kolom untuk mobile */
+    }
+
+    .review-item {
+        margin-bottom: 20px;
+    }
+
+    /* Contact Section */
+    .contact-info {
+        grid-template-columns: 1fr; /* Ubah menjadi satu kolom untuk mobile */
+        text-align: center;
+    }
+
+    .sosial-icon i {
+        font-size: 16px;
+    }
+
+    .end-text {
+        padding: 15px;
+    }
+
+    .end-text p {
+        font-size: 14px;
+    }
+}
+
+/* Media query untuk layar dengan lebar maksimum 480px (ponsel kecil) */
+@media (max-width: 480px) {
+    /* Header */
+    header {
+        padding: 10px 5%;
+    }
+
+    /* Main Section */
+    .main-text h1 {
+        font-size: 24px;
+    }
+
+    .main-text p {
+        font-size: 16px;
+    }
+
+    .main-btn {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    /* About Section */
+    .about-text h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .about-text p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .about-image img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Products Section */
+    .products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    /* Reviews Section */
+    .reviews-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact Section */
+    .contact-info p {
+        font-size: 12px;
+    }
+
+    .sosial-icon i {
+        font-size: 14px;
+    }
+
+    .end-text p {
+        font-size: 12px;
+    }
+}
